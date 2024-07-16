@@ -1,0 +1,80 @@
+.dashboard {
+    position: relative;
+    bottom: -130px;
+    padding: 20px;
+    background-color: #2c3038;
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.dashboard p{
+    font-size: 20px;
+    color: #00bfff;
+}
+
+.dashboard .orders, .dashboard .tracking {
+    background-color: #353a44;
+    border: 1px solid #00bfff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dashboard .orders h2, .dashboard .tracking h2 {
+    font-size: 1.3em;
+    margin: 0;
+    color: #00bfff;
+}
+
+.dashboard .orders form, .dashboard .tracking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .orders input, .dashboard .orders textarea, .dashboard .tracking input {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #48484d;
+    color: #fff;
+}
+
+.dashboard .orders input[type="submit"], .dashboard .tracking input[type="submit"] {
+    background-color: #00bfff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.orders input::placeholder {
+    color: #ccc;
+}
+
+.dashboard .orders input[type="submit"]:hover, .dashboard .tracking input[type="submit"]:hover {
+    background-color: #009acd;
+}
+
+.dashboard .orders ul, .dashboard .tracking ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard .orders li, .dashboard .tracking li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.dashboard .orders li:last-child, .dashboard .tracking li:last-child {
+    border-bottom: none;
+}
+
+.dashboard .orders li:hover, .dashboard .tracking li:hover {
+    background-color: #333;
+}
